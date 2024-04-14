@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Marishka\Desktop\code\OS\OS laba2\main.cpp(25,13): error C2664: "HANDLE CreateMutexW(LPSECURITY_ATTRIBUTES,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [6]" в "LPCWSTR"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\main.cpp(25,38): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\synchapi.h(400,1): message : см. объявление "CreateMutexW"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\main.cpp(25,13): message : при попытке сопоставить список аргументов "(int, int, const char [6])"
