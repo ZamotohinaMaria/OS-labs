@@ -1,0 +1,9 @@
+﻿  mul.cpp
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(19,39): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(27,39): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(29,17): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(29,17): warning C4302: <function-style-cast>: усечение из "char *" к "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(29,26): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(29,26): warning C4302: <function-style-cast>: усечение из "char *" к "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Multiplier\mul.cpp(37,40): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  Multiplier.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Debug\Multiplier.exe

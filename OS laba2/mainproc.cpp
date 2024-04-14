@@ -21,9 +21,10 @@ int main()
 
 	STARTUPINFO si;
 	PROCESS_INFORMATION pi;
-
+	char* x = {}; 
+	unsigned long n;
+	HANDLE m;
 	HANDLE a_mut = CreateMutex(NULL, FALSE, L"a_mut");
-	ReleaseMutex(a_mut);
 	HANDLE b_mut = CreateMutex(NULL, FALSE, L"b_mut");
 	ReleaseMutex(b_mut);
 	HANDLE c_mut = CreateMutex(NULL, FALSE, L"c_mut");
@@ -38,4 +39,13 @@ int main()
 	HANDLE c_mailpost = CreateMailslot(L"\\\\.\\mailslot\\c_mail", 0, MAILSLOT_WAIT_FOREVER, NULL);
 	HANDLE first_mailpost = CreateMailslot(L"\\\\.\\mailslot\\first_mail", 0, MAILSLOT_WAIT_FOREVER, NULL);
 	HANDLE second_mailpost = CreateMailslot(L"\\\\.\\mailslot\\second_mail", 0, MAILSLOT_WAIT_FOREVER, NULL);
+
+
+	ZeroMemory(&si, sizeof(STARTUPINFO));
+	CreateProcess(L".\\x64\\Debug\\Writer.exe", (LPWSTR)"\\\\.\\mailslot\\a_mail a_mut", NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+	WaitForSingleObject(a_mut, INFINITE);
+	ReadFile(a_mailpost, x, 8, &n, NULL);
+	printf("%s", x);
+	
+	return 0;
 }
