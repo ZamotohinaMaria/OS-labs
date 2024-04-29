@@ -1,0 +1,15 @@
+﻿  mainproc.cpp
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(55,44): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(57,44): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,55): warning C4101: x1: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(23,37): warning C4101: mut_sum: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(23,27): warning C4101: mut_sqrt: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,43): warning C4101: buff2: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,64): warning C4101: x2: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(23,18): warning C4101: mut_sub: неиспользованная локальная переменная
+  Создание кода
+  1 of 39 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  OS laba2.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Release\OS laba2.exe

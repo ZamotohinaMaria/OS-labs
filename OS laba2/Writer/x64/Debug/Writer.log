@@ -1,4 +1,3 @@
 ﻿  writer.cpp
-C:\Users\Marishka\Desktop\code\OS\OS laba2\Writer\writer.cpp(24,40): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
-C:\Users\Marishka\Desktop\code\OS\OS laba2\Writer\writer.cpp(16,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Writer\writer.cpp(28,40): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
   Writer.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Debug\Writer.exe

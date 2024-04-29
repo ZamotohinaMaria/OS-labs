@@ -1,0 +1,11 @@
+﻿  sub.cpp
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Sub\sub.cpp(27,18): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Sub\sub.cpp(27,18): warning C4302: <function-style-cast>: усечение из "char *" к "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Sub\sub.cpp(27,27): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Sub\sub.cpp(27,27): warning C4302: <function-style-cast>: усечение из "char *" к "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\Sub\sub.cpp(29,45): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Sub.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Release\Subtractor.exe

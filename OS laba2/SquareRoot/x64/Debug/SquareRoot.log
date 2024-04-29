@@ -1,7 +1,5 @@
 ﻿  sqrt.cpp
-C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(20,39): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
-C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(22,28): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
-C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(22,28): warning C4302: <function-style-cast>: усечение из "char *" к "int"
-C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(30,40): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
-C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(11,20): warning C4101: second_mut: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(23,23): warning C4311: <function-style-cast>: усечение указателя из "char *" в "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(23,23): warning C4302: <function-style-cast>: усечение из "char *" к "int"
+C:\Users\Marishka\Desktop\code\OS\OS laba2\SquareRoot\sqrt.cpp(25,45): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
   SquareRoot.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Debug\SquareRoot.exe

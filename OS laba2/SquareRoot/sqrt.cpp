@@ -1,31 +1,28 @@
 #include <stdio.h>
 #include <windows.h>
 #include <math.h>
+#include <iostream>
 
-//argv[2] = sqrt(argv[1])
-//argv[3], argv[4]- мьютексы
+using namespace std;
 
-int main(int argc, char* argv)
+int main()
 {
-	unsigned long n; // Сколько записано
-	HANDLE first_mut, second_mut, third_mut, mail;
-	 char a[128], b[128];
+	DWORD n;
+	HANDLE sqrt_slot = CreateMailslot("\\\\.\\mailslot\\slot_sqrt", 128, MAILSLOT_WAIT_FOREVER, NULL);
+	HANDLE res_slot = CreateFile("\\\\.\\mailslot\\slot2", GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	HANDLE m = CreateMutex(NULL, TRUE, "mut_sqrt");
+	while (true)
+	{
+		char a[128] = {}, b[128] = {};
+		ReleaseMutex(m);
 
-	//argv[1]
-	while ((first_mut = OpenMutex(MUTEX_ALL_ACCESS, TRUE, (LPCWSTR)argv[3])) == NULL);
-	WaitForSingleObject(first_mut, INFINITE);
+		ReadFile(sqrt_slot, &a, 127, &n, NULL);;
+		//cout << "a = " << a << endl;
+		ReleaseMutex(m);
 
-	mail = CreateFile((LPCWSTR)argv[1], GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING,
-		FILE_ATTRIBUTE_NORMAL, 0);
-	ReadFile(mail, a, strlen(a), &n, NULL);
-
-	*b = char(round(sqrt(int(a)*100)/100)); //округение до 2х знаков после запятой
-
-	//argv[2]
-	while ((third_mut = OpenMutex(MUTEX_ALL_ACCESS, TRUE, (LPCWSTR)argv[4])) == NULL);
-	WaitForSingleObject(third_mut, INFINITE);
-
-	mail = CreateFile((LPCWSTR)argv[2], GENERIC_WRITE, FILE_SHARE_READ, NULL, OPEN_EXISTING,
-		FILE_ATTRIBUTE_NORMAL, 0);
-	WriteFile(mail, b, strlen(b), &n, NULL);
+		sprintf_s(b, "%lf", sqrt(atof(a)));
+		//cout << "sqrt(a) = " << b << endl;
+		WriteFile(res_slot, b, strlen(b), &n, NULL);
+		ReleaseMutex(m);
+	}
 }

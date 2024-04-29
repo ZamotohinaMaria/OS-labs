@@ -1,3 +1,7 @@
 ﻿  mainproc.cpp
-C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(26,9): warning C4101: m: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(55,44): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(57,44): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,55): warning C4101: x1: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,43): warning C4101: buff2: неиспользованная локальная переменная
+C:\Users\Marishka\Desktop\code\OS\OS laba2\mainproc.cpp(35,64): warning C4101: x2: неиспользованная локальная переменная
   OS laba2.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\x64\Debug\OS laba2.exe

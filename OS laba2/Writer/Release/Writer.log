@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (Release\) содержит файлы, которые используются совместно с другим проектом (Writer.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  div.cpp
+  Создание кода
+  4 of 5 functions (80.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Writer.vcxproj -> C:\Users\Marishka\Desktop\code\OS\OS laba2\Release\Divider.exe
