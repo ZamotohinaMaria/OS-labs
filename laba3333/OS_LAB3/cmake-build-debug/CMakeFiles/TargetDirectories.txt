@@ -1,0 +1,3 @@
+/home/bob/sys-prog/OS_LAB3/cmake-build-debug/CMakeFiles/OS_LAB3.dir
+/home/bob/sys-prog/OS_LAB3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bob/sys-prog/OS_LAB3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
