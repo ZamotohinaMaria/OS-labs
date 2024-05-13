@@ -19,7 +19,7 @@ int main()
     unsigned int p;
 
     sem_t* s_main = sem_open("/s_main",0);
-    sem_t* s_sqrt = sem_open("/s_sqrt", O_CREAT, S_IRUSR | S_IWUSR,0);
+    sem_t* s_sqrt = sem_open("/s_sqrt", 0);
     mqd_t q_sqrt = mq_open("/q_sqrt", O_RDWR/*, 0666, NULL*/);
 
     sem_wait(s_sqrt);
@@ -29,8 +29,10 @@ int main()
         //cout << "im wait" << endl;
         //sem_wait(s_main);
         //cout << "im read" << endl;
+        //sem_wait(s_main);
+
         mq_receive(q_sqrt, a, 128, 0);
-        cout << "a = " << a << endl;
+        //cout << "a = " << a << endl;
 
 
         sprintf(c, "%lf", sqrt(atof(a)));

@@ -18,7 +18,7 @@ int main()
     unsigned int p;
 
     sem_t* s_main = sem_open("/s_main",0);
-    sem_t* s_sum = sem_open("/s_sum", O_CREAT, S_IRUSR | S_IWUSR,0);
+    sem_t* s_sum = sem_open("/s_sum", 0);
     mqd_t q_sum = mq_open("/q_sum", O_RDWR/*, 0666, NULL*/);
 
     sem_wait(s_sum);
@@ -29,10 +29,10 @@ int main()
         //sem_wait(s_main);
         //cout << "im read" << endl;
         mq_receive(q_sum, a, 128, 0);
-        cout << "a = " << a << endl;
+        //cout << "a = " << a << endl;
 
         mq_receive(q_sum, b, 128, 0);
-        cout << "b = " << b << endl;
+        //cout << "b = " << b << endl;
 
 
         sprintf(c, "%lf", atof(a) + atof(b));
